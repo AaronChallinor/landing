@@ -1,0 +1,101 @@
+  /*Things to remember:
+
+  flex:1 allows all the flex items to expand to fill the available space.
+  flex-direction: column in the body is generally a good idea. */
+
+  * {
+    /* Boiler-plate for resetting the css values */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: #1f2937;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;    
+    /* line-height: 1.5; */
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    /* border: 2px solid red; */
+    min-height: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  ul{display: flex;
+    margin-right: 150px;
+    
+  }
+
+  li { margin-left: 20px;
+        list-style-type: none;
+
+  }
+
+  .logo{ margin-left: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #F9FAF8;  
+  }
+
+  .hero {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    max-height: 400px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+  }
+
+  .hero_main_title{
+      margin-bottom: 10px;
+  }
+
+  .hero_left_subtext{
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+
+  .heroleft{
+      max-width: 50%;
+     
+      flex-direction: column;
+      margin-right: 40px;
+  }
+
+  button{
+      background: #3882f6;
+      color: white;
+      padding: 20px;
+      border-radius: 10%;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .heroright{
+    /* max-width: 50%; */
+    margin-right: 150px;
+}
+    .catpic{height: 350px;
+
+
+    }
+
+    a{text-decoration: none;
+        color: white;
+
+    }
