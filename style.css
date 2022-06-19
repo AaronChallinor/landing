@@ -18,13 +18,14 @@
     color: #e5e7eb;
     /* display: flex; */
     flex-direction: column;
+    min-width: 100vw;
   }
 
   .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    min-height: auto;
     /* border: 2px solid red; */
     min-height: 50px;
     margin-bottom: 50px;
@@ -38,6 +39,7 @@
 
   li { margin-left: 20px;
         list-style-type: none;
+        font-size: 18px;
 
   }
 
@@ -53,12 +55,12 @@
     margin-left: 150px;
     max-height: 400px;
     align-items: center;
-    /* flex-wrap: wrap; */
 
   }
 
   .hero_main_title{
       margin-bottom: 10px;
+      font-size: 48px;
   }
 
   .hero_left_subtext{
@@ -66,6 +68,7 @@
       max-width: 100%;
       flex-direction: column;
       margin-bottom: 10px;
+      font-size: 18px;
   }
 
   .heroleft{
@@ -80,7 +83,7 @@
       color: white;
       padding: 20px;
       border-radius: 10%;
-      height: 15px;
+      min-height: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -89,8 +92,16 @@
   .heroright{
     /* max-width: 50%; */
     margin-right: 150px;
+    align-items: center;
+
 }
-    .catpic{height: 350px;
+    .catpic{
+      max-width: 100%;
+      max-height: 400px;
+      min-width: 50%;
+      min-height: 200px;
+      flex-shrink: 0;
+      display: flex;
 
 
     }
@@ -108,15 +119,15 @@
         margin-top: 100px;
         justify-content: space-between;
         background: white;
-        width: 100%;
         flex-wrap: wrap;
+        min-width: 100vw;
         
 
     }
 
     .cardpic{
-        height: 200px;
-        width: 200px;
+        min-height: 200px;
+        max-width: 200px;
         margin: 0;
         display:flex;
         margin-bottom: 5px;
@@ -131,7 +142,7 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        height: 100%;
+        min-height: 100%;
         font-size: medium;
         /* border: 2px solid red; */
         max-width: 1500px;
@@ -139,18 +150,47 @@
         margin-right: 150px;
         color: black;
         flex-wrap: wrap;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
     
     }
 
     .card_main_title{margin-left: 150px;
         margin-right: 150px;
         color: black;
-        margin-bottom: 5px;
-        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         padding: 0;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    
+    .section3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+      background: #e5e7eb;
+    }
 
+    .pet_quote{
+      text-align: center;
+      color: #1f2937;
+      font-size: 36px;
+      max-width: 70%;
+      font-weight: lighter;
+      margin-top: 80px;
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-bottom: 80px;
+      
+     
+    }
+
+    cite{color: #1f2937;
+      font-size: 25px; 
+      font-weight: bold;
+      
 
 
     }
-    
